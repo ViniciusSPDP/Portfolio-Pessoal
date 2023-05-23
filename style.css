@@ -249,3 +249,165 @@ html{
     text-transform: uppercase;
     font-size: 40px;
 }
+
+.title-tec .vazado{
+    color: transparent;
+    animation: mudacor2 5s infinite;
+    color: #000;
+}
+
+@keyframes mudacor2 {
+    0%{
+        color: transparent;
+    }
+    50%{
+        color: rgb(65, 65, 65);
+    }
+    100%{
+        color: transparent;
+    }
+}
+
+.container-cards{
+    position: relative;
+    z-index: 60;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container-cards .cards{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 100%;
+}
+
+.card-html{
+    background-color: #F16529;
+}
+
+.img-card{
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+.icon-card{
+    width: 150px;
+    margin: auto;
+}
+
+.container-cards .cards .conteudo{
+    position: absolute;
+    bottom: -400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 1s ease-in;
+    animation: teste 3s infinite ease-in;
+}
+
+.container-cards .cards:hover .conteudo{
+    bottom: 0;
+}
+
+.card-html::before{
+    content: 'HTML 5';
+    position: absolute;
+    transform: rotate(90deg);
+    top: 10vh;
+    left: -2rem;
+    font-size: 30px;
+}
+
+.card-css{
+    background-color: #2965F1;
+}
+
+.card-css::before{
+    content: 'CSS 3';
+    position: absolute;
+    transform: rotate(90deg);
+    top: 10vh;
+    left: -1rem;
+    font-size: 30px;
+}
+
+
+.card-js{
+    background-color: #F7DF1E;
+}
+
+.card-js::before{
+    content: 'JavaScript';
+    position: absolute;
+    transform: rotate(90deg);
+    top: 10vh;
+    left: -3rem;
+    font-size: 30px;
+}
+.card-java{
+    background-color: #ffffff;
+}
+
+.card-java::before{
+    content: 'Java';
+    position: absolute;
+    transform: rotate(90deg);
+    top: 10vh;
+    left: 0rem;
+    font-size: 30px;
+}
+
+.baixo{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-items: end;
+    position: relative;
+}
+
+
+.card-pgadmin{
+    position: absolute;
+    left: -25%;
+    background-color: #5A81A2;
+}
+
+.card-pgadmin::before{
+    content: 'Postgresql';
+    position: absolute;
+    transform: rotate(90deg);
+    top: 19%;
+    left: -16%;
+    font-size: 30px;
+}
+
+@keyframes teste {
+    0%{
+        box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    }
+    50%{
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.651);
+    }
+    100%{
+        box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    }
+}
