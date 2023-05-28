@@ -9,18 +9,18 @@ Este é o repositório do meu projeto de portfólio pessoal, desenvolvido utiliz
 - CSS
 
 ## Funcionalidades - Em desenvolvimento
-*Página Inicial:* Apresentação concisa sobre mim e meu objetivo como desenvolvedor. Apresentação de uma imagem de destaque.
+- *Página Inicial:* Apresentação concisa sobre mim e meu objetivo como desenvolvedor. Apresentação de uma imagem de destaque.
 *Seção de Habilidades:* Destaca minhas habilidades em diferentes áreas de desenvolvimento, como front-end, back-end, banco de dados, etc.
-*Projetos:* Lista de projetos que desenvolvi, com descrição, capturas de tela e links para repositórios ou demonstrações online.
-*Experiência:* Informações sobre minha experiência profissional e acadêmica.
-*Educação:* Detalhes sobre minha formação acadêmica e cursos relevantes que concluí.
-*Contato:* Formulário de contato para os visitantes me enviarem mensagens ou consultas.
+- *Projetos:* Lista de projetos que desenvolvi, com descrição, capturas de tela e links para repositórios ou demonstrações online.
+- *Experiência:* Informações sobre minha experiência profissional e acadêmica.
+- *Educação:* Detalhes sobre minha formação acadêmica e cursos relevantes que concluí.
+- *Contato:* Formulário de contato para os visitantes me enviarem mensagens ou consultas.
 
 ## Estrutura de Arquivos
-*home.html:* Página inicial do site.
-*style.css:* Arquivo CSS para estilizar o site.
-*imgs/:* Diretório contendo as imagens utilizadas no site.
-*bg_animado/:* Diretório contendo os vídeos utlizados os videos de Backgrouns.
+- *home.html:* Página inicial do site.
+- *style.css:* Arquivo CSS para estilizar o site.
+- *imgs/:* Diretório contendo as imagens utilizadas no site.
+- *bg_animado/:* Diretório contendo os vídeos utlizados os videos de Backgrouns.
 
 ## Pré-requisitos
 - Para visualizar e executar o projeto em seu próprio ambiente, você precisará apenas de um navegador da web moderno, como o Google Chrome ou Mozilla Firefox.
