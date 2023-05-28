@@ -138,7 +138,7 @@ html{
     height: 18px;
 }
 
-.dinamico li{
+.dinamico>li{
     color: gray;
     list-style: none;
     left: 0;
@@ -410,4 +410,18 @@ html{
     100%{
         box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
     }
+}
+
+.container-sobre{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2%;
+}
+
+.conteudo-sobre{
+    margin-left: 30%;
+}
+
+.img-sobre{
+    width: 20%;
 }
