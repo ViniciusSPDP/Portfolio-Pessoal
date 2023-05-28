@@ -8,3 +8,8 @@ var typed = new Typed('#element', {
     showCursor: true,
     cursorChar: '|',
 });
+
+window.addEventListener('scroll', function(){
+    var navbar = document.querySelector('.none')
+    navbar.classList.toggle('mudarnav', window.scrollY > 650)
+})

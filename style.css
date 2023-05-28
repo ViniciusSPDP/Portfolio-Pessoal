@@ -19,6 +19,31 @@ html{
     position: relative;
 }
 
+.none{
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    z-index: 200;
+    width: 100%;
+    transition: 1s ease-in;
+}
+
+
+nav.mudarnav{
+    top: -20px;
+    opacity: 1;
+    position: fixed;
+    background: #000;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    width: 100%;
+    z-index: 200;
+    transition: 1s ease-in;
+}
+
+nav.mudarnav>.logo>.logo{
+    width: 95%;
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 22% 54% 22%;
@@ -27,6 +52,14 @@ html{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 2rem;
+    transition: 1s ease-in;
+}
+
+
+
+.nav-principal{
+    z-index: 300;
+    position: relative;
 }
 
 .logo {
@@ -420,8 +453,129 @@ html{
 
 .conteudo-sobre{
     margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
 
+
 .img-sobre{
-    width: 20%;
+    width: 50%;
+    border-radius: 10%;
+    margin-left: 10%;
+    border: 1px solid black;
+    animation: img-eu 4s infinite;
+    box-shadow: 0 0 40px 2px #000;
 }
+/*
+@keyframes img-eu{
+    0%{
+        margin-left: 10%;
+    }
+    50%{
+        margin-left: 13%;
+    }
+    100%{
+        margin-left: 10%;
+    }
+}
+*/
+.foto-minha{
+    display: flex;
+    position: relative;
+}
+.logo-sobre{
+    background-color: #000;
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    position: absolute;
+    top: 84%;
+    left: 54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+div.foto-minha>.logo-sobre>svg{
+    margin: auto;
+    fill: black;
+    stroke: white;
+    stroke-dasharray: 2266;
+    stroke-dashoffset: 0;
+    animation: logo-desenho 16s infinite linear;
+}
+
+@keyframes logo-desenho{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    50%{
+        stroke-dashoffset: 2266;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.descricao{
+    text-align: center;
+}
+.titulo-projeto{
+    position: relative;
+    width: 100%
+
+}
+
+h4.title-tec::before{
+    content: '';
+    width: 40%;
+    border: 1px solid #000;
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    animation: linha-be 10s infinite;
+}
+h4.title-tec::after{
+    content: '';
+    width: 40%;
+    border: 1px solid #000;
+    position: absolute;
+    left: 40%;
+    top: 75%;
+    animation: linha-af 10s infinite;
+    animation-direction: reverse;
+}
+
+@keyframes linha-be{
+    0%{
+        width: 0%;
+        left: 60%;
+    }
+    50%{
+        width: 40%;
+        left: 60%;
+    }
+    100%{
+        width: 0%;
+        left: 60%;
+
+    }
+}
+@keyframes linha-af{
+    0%{
+        left: 40%;
+        width: 0;
+    }
+    50%{
+        left: 0;
+        width: 40%;
+    }
+    100%{
+        left: 40%;
+        width: 0;
+    }
+}
+
