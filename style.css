@@ -46,7 +46,7 @@ nav.mudarnav>.logo>.logo{
 
 .navbar {
     display: grid;
-    grid-template-columns: 22% 54% 22%;
+    grid-template-columns: 22% 56% 22%;
     justify-items: center;
     align-items: center;
     padding-left: 5rem;
@@ -283,24 +283,6 @@ nav.mudarnav>.logo>.logo{
     font-size: 40px;
 }
 
-.title-tec .vazado{
-    color: transparent;
-    animation: mudacor2 5s infinite;
-    color: #000;
-}
-
-@keyframes mudacor2 {
-    0%{
-        color: transparent;
-    }
-    50%{
-        color: rgb(65, 65, 65);
-    }
-    100%{
-        color: transparent;
-    }
-}
-
 .container-cards{
     position: relative;
     z-index: 60;
@@ -311,6 +293,7 @@ nav.mudarnav>.logo>.logo{
     flex-wrap: wrap;
     margin: 40px 0;
 }
+
 
 .container-cards .cards{
     position: relative;
@@ -579,3 +562,40 @@ h4.title-tec::after{
     }
 }
 
+
+
+
+
+@media screen and (max-width: 1000px){
+
+    .container-cards{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .baixo{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+    .card-pgadmin{
+        position: sticky;
+        left: auto;
+        background-color: #5A81A2;
+    }
+
+    .container-sobre{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 0%;
+    }
+
+    .conteudo-sobre{
+        margin: 0% 10%;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+}
