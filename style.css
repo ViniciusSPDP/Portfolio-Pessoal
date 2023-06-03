@@ -488,7 +488,7 @@ div.foto-minha>.logo-sobre>svg{
     stroke: white;
     stroke-dasharray: 2266;
     stroke-dashoffset: 0;
-    animation: logo-desenho 16s infinite linear;
+    animation: logo-desenho 10s infinite linear;
 }
 
 @keyframes logo-desenho{
@@ -511,7 +511,7 @@ div.foto-minha>.logo-sobre>svg{
     width: 100%
 
 }
-
+/*
 h4.title-tec::before{
     content: '';
     width: 40%;
@@ -521,15 +521,18 @@ h4.title-tec::before{
     top: 75%;
     animation: linha-be 10s infinite;
 }
+
+
 h4.title-tec::after{
     content: '';
-    width: 40%;
+    width: 100%;
     border: 1px solid #000;
     position: absolute;
     left: 40%;
-    top: 75%;
-    animation: linha-af 10s infinite;
-    animation-direction: reverse;
+    top: 22%;
+    animation: linha-af 9s infinite;
+    transform: rotate(360deg);
+    border-radius: 10px;
 }
 
 @keyframes linha-be{
@@ -549,20 +552,26 @@ h4.title-tec::after{
 }
 @keyframes linha-af{
     0%{
-        left: 40%;
+        left: 0;
         width: 0;
     }
     50%{
         left: 0;
-        width: 40%;
+        width: 100%;
     }
     100%{
-        left: 40%;
+        left: 0;
         width: 0;
     }
 }
+*/
+.articlebg{
+    margin-top: 3vh;
+}
 
-
+.container-celular{
+    display: none;
+}
 
 
 
@@ -598,4 +607,42 @@ h4.title-tec::after{
         margin-bottom: 25px;
         font-size: 14px;
     }
+    .container-tec{
+        display: none;
+    }
+
+    .container-celular{
+        display: block;
+        position: relative;
+        z-index: 1200;
+    }
+    .gallery {
+        background: #EEE;
+      }
+      
+      .gallery-cell {
+        width: 66%;
+        height: 400px;
+        margin-right: 10px;
+        background: #8C8;
+        counter-increment: gallery-cell;
+      }
+      
+      .gallery-cell:before {
+          display: block;
+          text-align: center;
+          content: counter(gallery-cell);
+          line-height: 400px;
+          font-size: 80px;
+          color: white;
+    
+      }
 }
+
+
+
+/*body { font-family: sans-serif; }
+
+
+    // external js: flickity.pkgd.js
+  }*/
