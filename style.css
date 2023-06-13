@@ -603,6 +603,11 @@ div.foto-minha>.logo-sobre>svg {
     transition: 0.5s ease-in-out;
 }
 
+.logo-rh {
+    width: 50%;
+    transition: 0.5s ease-in-out;
+}
+
 .logo-music {
     width: 40%;
     transition: 0.5s ease-in-out;
@@ -659,6 +664,15 @@ div.foto-minha>.logo-sobre>svg {
     color: #037971;
 }
 
+.texto-music{
+    color: #f9dd58
+}
+
+.texto-orange{
+    color: rgb(245, 160, 4);
+    font-size: 95%;
+}
+
 .texto-branco {
     color: #fff;
 }
@@ -713,7 +727,7 @@ div.foto-minha>.logo-sobre>svg {
 }
 
 .bg-portfolio {
-    background-color: #000;
+    background-color: #051922;
     border-radius: 20px;
 }
 
