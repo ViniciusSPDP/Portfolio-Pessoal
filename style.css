@@ -11,19 +11,23 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
-.font-titulo{
+
+.font-titulo {
     font-size: 2rem;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
 
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 .header {
     position: relative;
 }
@@ -599,7 +603,7 @@ div.foto-minha>.logo-sobre>svg {
     transition: 0.5s ease-in-out;
 }
 
-.logo-music{
+.logo-music {
     width: 40%;
     transition: 0.5s ease-in-out;
 }
@@ -634,7 +638,7 @@ div.foto-minha>.logo-sobre>svg {
     height: 5rem;
     width: 5rem;
     left: -65px;
-    
+
 }
 
 .container-projetos .card-projeto:hover .img-cardproj .logo-l {
@@ -651,23 +655,23 @@ div.foto-minha>.logo-sobre>svg {
     text-align: center;
 }
 
-.texto-legacy{
+.texto-legacy {
     color: #037971;
 }
 
-.texto-branco{
+.texto-branco {
     color: #fff;
 }
 
-.maiusculo{
+.maiusculo {
     text-transform: uppercase;
 }
 
-.texto-g1{
+.texto-g1 {
     color: #A0000C;
 }
 
-.mb{
+.mb {
     margin-bottom: 5%;
 }
 
@@ -684,7 +688,7 @@ div.foto-minha>.logo-sobre>svg {
     color: white;
 }
 
-.texto-pequeno{
+.texto-pequeno {
     font-size: .67em;
 }
 
@@ -698,7 +702,7 @@ div.foto-minha>.logo-sobre>svg {
     border-radius: 20px;
 }
 
-.bg-blognode{
+.bg-blognode {
     background-color: #FFBE00;
     border-radius: 20px;
 }
@@ -713,10 +717,11 @@ div.foto-minha>.logo-sobre>svg {
     border-radius: 20px;
 }
 
-.mt-icon{
+.mt-icon {
     top: 80%;
 }
 
+/*
 .custom-btn {
     width: 130px;
     height: 40px;
@@ -736,11 +741,12 @@ div.foto-minha>.logo-sobre>svg {
     outline: none;
     transition: all 1s ease;
 }
-
-.texto-preto{
+*/
+.texto-preto {
     color: #000;
 }
 
+/*
 .btn-3 {
     background: rgb(0, 172, 238);
     background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
@@ -891,6 +897,119 @@ div.foto-minha>.logo-sobre>svg {
     width: 100%;
 }
 
+*/
+
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: var(--texto);
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+/* 3 */
+.btn-3 {
+    background: var(--cor);
+    background: var(--cor);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--cor);
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:hover {
+    color: var(--cor);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--cor);
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 
 .container-projetos-front {
     display: grid;
@@ -952,7 +1071,7 @@ div.foto-minha>.logo-sobre>svg {
     text-align: center;
 }
 
-.icon-tec{
+.icon-tec {
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -960,11 +1079,11 @@ div.foto-minha>.logo-sobre>svg {
     width: 30%;
 }
 
-.box-input{
+.box-input {
     position: relative;
 }
 
-.box-input label{
+.box-input label {
     position: absolute;
     top: 50%;
     z-index: 20;
@@ -972,7 +1091,7 @@ div.foto-minha>.logo-sobre>svg {
     transition: all 0.2s;
 }
 
-input{
+input {
     width: 100%;
     border: none;
     border-bottom: #000 solid 1px;
@@ -980,27 +1099,27 @@ input{
     margin-top: 3%;
 }
 
-.container-contato{
+.container-contato {
     margin: 2% 5%;
 }
 
-input:focus{
+input:focus {
     border: none;
     border-bottom: #037971 solid 1px;
     outline: none;
 }
 
-input:focus+label{
+input:focus+label {
     color: #037971;
 }
 
 input:valid+label,
-input:focus+label{
+input:focus+label {
     top: 10%;
     font-size: 90%;
 }
 
-button{
+#enviar {
     width: 100%;
     padding: .5rem;
     transition: all 1s;
@@ -1009,12 +1128,12 @@ button{
     margin-top: 3%;
 }
 
-button:hover{
+#enviar:hover {
     background-color: #fff;
     color: #000;
 }
 
-textarea{
+textarea {
     width: 100%;
     margin-top: 3%;
     transition: all 1s;
@@ -1022,33 +1141,33 @@ textarea{
     height: 10rem;
 }
 
-textarea:focus{
+textarea:focus {
     border: 1px solid #037971;
 }
 
-textarea:focus+label{
+textarea:focus+label {
     color: #037971;
 }
 
-footer{
+footer {
     width: 100%;
     background-color: #000;
     padding: 2% 10%;
 }
 
-.mapa-site{
+.mapa-site {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 15%;
 }
 
-.mapa-site li{
+.mapa-site li {
     position: relative;
     margin-top: .1rem;
 }
 
-.mapa-site li a{
+.mapa-site li a {
     position: relative;
     font-size: 1rem;
     line-height: 2rem;
@@ -1057,36 +1176,57 @@ footer{
     color: gray;
     transition: .5s;
 }
-.mapa-site li a:hover{
+
+.mapa-site li a:hover {
     color: rgb(87, 87, 87);
     filter: drop-shadow(0 0 1.2rem gray);
 }
 
-.container-mapa{
+.container-mapa {
     display: grid;
     grid-template-columns: 40% 60%;
 }
 
-.icon-logo{
+.icon-logo {
     width: 15%;
     display: block;
 }
-.logo-saraivafooter{
+
+.logo-saraivafooter {
     display: flex;
     margin: auto;
 }
 
-.copy{
+.copy {
     border-top: 1px solid white;
     text-align: center;
     padding: 2% 0;
 }
-.links{
+
+.links {
     font-size: 1.5rem;
 }
-.texto-cinza{
+
+.texto-cinza {
     color: gray;
     text-align: center;
     display: block;
     margin: auto;
+}
+
+.btn-front {
+    padding: .5rem;
+    background-color: var(--cor);
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 10%;
+}
+
+.caixa-conteudo{
+    padding: 5%;
+}
+
+.centralizar{
+    text-align: center;
 }
