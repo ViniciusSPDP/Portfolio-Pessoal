@@ -132,7 +132,7 @@ nav.mudarnav>.logo>.logo {
 }
 
 .video {
-    height: 44rem;
+    height: 60rem;
     width: 100%;
     position: absolute;
     top: 0;
@@ -145,7 +145,7 @@ nav.mudarnav>.logo>.logo {
     position: absolute;
     top: -5px;
     left: 0;
-    height: 44rem;
+    height: 60rem;
     width: 100%;
     background-image: linear-gradient(to right, rgba(0, 0, .7), rgba(0, 0, 0, .4));
     z-index: 50;
@@ -245,7 +245,7 @@ nav.mudarnav>.logo>.logo {
     position: relative;
     z-index: 50;
     height: 3.5rem;
-    margin-top: 500px;
+    margin-top: 610px;
     z-index: 100;
 }
 
@@ -284,10 +284,19 @@ nav.mudarnav>.logo>.logo {
 }
 
 .bg-saraiva {
-    object-fit: cover;
     width: 100%;
     position: absolute;
     border-radius: 10px 10px 0 0;
+}
+
+#tec{
+    margin-top: 5%;
+}
+#contato{
+    margin-top: 10%;
+}
+.container-principalproj{
+    position: relative;
 }
 
 .title-tec {
@@ -715,6 +724,7 @@ div.foto-minha>.logo-sobre>svg {
     background-color: #ffffff;
     border-radius: 20px;
 }
+
 
 .bg-blognode {
     background-color: #FFBE00;
