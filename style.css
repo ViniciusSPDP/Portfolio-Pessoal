@@ -43,7 +43,7 @@ body {
 
 
 nav.mudarnav {
-    top: -20px;
+    top: -1.25rem;
     opacity: 1;
     position: fixed;
     background: #000;
@@ -80,7 +80,7 @@ nav.mudarnav>.logo>.logo {
     z-index: 100;
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .saraiva {
@@ -123,7 +123,7 @@ nav.mudarnav>.logo>.logo {
 }
 
 .icon {
-    width: 20px;
+    width: 1.25rem;
     transition: all 20s;
 }
 
@@ -132,7 +132,7 @@ nav.mudarnav>.logo>.logo {
 }
 
 .video {
-    height: 44rem;
+    height: 110vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -145,7 +145,7 @@ nav.mudarnav>.logo>.logo {
     position: absolute;
     top: -5px;
     left: 0;
-    height: 44rem;
+    height: 110vh;
     width: 100%;
     background-image: linear-gradient(to right, rgba(0, 0, .7), rgba(0, 0, 0, .4));
     z-index: 50;
@@ -155,8 +155,9 @@ nav.mudarnav>.logo>.logo {
     position: absolute;
     z-index: 50;
     color: white;
-    top: 260px;
+    top: 50vh;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
 
@@ -166,12 +167,16 @@ nav.mudarnav>.logo>.logo {
     text-transform: uppercase;
 }
 
+#tec{
+    top: initial;
+}
+
 
 .eu {
     position: absolute;
     z-index: 50;
     color: white;
-    top: 305px;
+    top: 60vh;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -180,9 +185,9 @@ nav.mudarnav>.logo>.logo {
 }
 
 .eu .dinamico {
-    margin-left: 15px;
+    margin-left: 0.9375rem;
     overflow: hidden;
-    height: 18px;
+    height: 1.125rem;
 }
 
 .dinamico>li {
@@ -227,7 +232,7 @@ nav.mudarnav>.logo>.logo {
     border: 1px solid white;
     border-radius: .5rem;
     color: white;
-    top: 400px;
+    top: 67vh;
     left: 50%;
     position: absolute;
     text-decoration: none;
@@ -244,8 +249,8 @@ nav.mudarnav>.logo>.logo {
 .setabaixo {
     position: relative;
     z-index: 50;
-    height: 3.5rem;
-    margin-top: 500px;
+    height: 1.7rem;
+    margin-top: 74.3vh;
     z-index: 100;
 }
 
