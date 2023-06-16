@@ -96,6 +96,10 @@ nav.mudarnav>.logo>.logo {
     z-index: 100;
 }
 
+#tec{
+    margin-top: 9%;
+}
+
 /*
 .list:first-child{
     margin-left: 20rem;
@@ -250,7 +254,7 @@ nav.mudarnav>.logo>.logo {
     position: relative;
     z-index: 50;
     height: 1.7rem;
-    margin-top: 74.3vh;
+    margin-top: 79vh;
     z-index: 100;
 }
 
