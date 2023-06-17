@@ -12,6 +12,14 @@
     text-decoration: none;
 }
 
+#contato{
+    margin-top: 5%;
+}
+
+.pt{
+    padding-top: 4%;
+}
+
 .font-titulo {
     font-size: 2rem;
 }
